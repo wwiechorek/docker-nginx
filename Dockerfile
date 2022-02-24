@@ -1,7 +1,7 @@
 FROM nginx:stable
 
 ARG CERTBOT_EMAIL=william.wiechorek@gmail.com
-ARG dokku.happs.in,mosquitto.dokku.happs.in
+ARG DOMAIN_LIST=dokku.happs.in,mosquitto.dokku.happs.in
 
 RUN  apt-get update \
       && apt-get install -y cron certbot python3-certbot-nginx bash wget \
